@@ -493,13 +493,6 @@ public class WallpaperBoardActivity extends AppCompatActivity implements Activit
             else if (id == R.id.navigation_view_settings) mPosition = 2;
             else if (id == R.id.navigation_view_about) mPosition = 3;
             else if (id == R.id.navigation_view_donate) mPosition = 4;
-            else if (id == R.id.navigation_view_premium){
-                String url = "https://play.google.com/store/apps/details?id=com.bhs.finnstpro";
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
-                startActivity(i);
-                return false;
-            }    
             else if (id == R.id.navigation_view_share) {
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/plain");
